@@ -4,20 +4,140 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>tindog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link href="styles.css" rel="stylesheet" /> -->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <style>
+    .container-fluid{
+        display:grid;
+    }
+    .home {
+      background-color: #ff4c68;
+      padding: 5rem;
+    }
+    #tindog {
+      font-size: 3rem;
+      color: aliceblue;
+    }
+    #linkdown {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: right;
+      margin:-20rem 0 0 18em;
+      font-size: larger;
+    }
+    #linkdown,
+    A:link {
+      text-decoration: none;
+      color: aliceblue;
+
+    }
+    #linkdown,
+    A:visited {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    #linkdown,
+    A:hover {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    #linkdown,
+    A:active {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    .bottom-left{
+        justify-content: space-evenly;
+        border:8px solid purple;
+        margin:2em 22em -1em -3em ;
+        padding:3em;
+        color:aliceblue;
+        font-family:'Times New Roman', Times, serif;
+    }
+    /* .bottom-right{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-end;
+        margin:2em 0em 0em 23em;
+        border: 3px solid black;
+    } */
+    #meet{
+        display: inline-flex;
+        justify-content: space-evenly;
+
+    }
+    .bottom-right{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        margin:6em 12em 0em 26em;
+        border:solid 8px black;
+
+    }
+    img{
+        width:100%;
+        height:100%;
+        display: flex;
+        rotate: 4deg;
+        transform: rotate(25deg) ;
+        align-self: right;
+    }
+    #colorchoice{
+        color:white;
+        background-color: #ff4c68;
+    }
+    #android{
+      color:aliceblue;
+      border:1px,aliceblue;
+    }
+    #android:hover{
+      color:black;
+    }
+    .gplay:hover{
+      filter:invert(1);
+    }
+  </style>
+  <div class="container-fluid">
+    <div class="home">
+      <body>
+        <div class="left">
+            <div id="banner">
+          <h1 class="text-decoration text-left" id="tindog">tindog</h1></div>
+        <div class="bottom-left">
+            <h1 class="text-left" id="meet">Meet new and interesting dogs nearby.</h1>
+            <section>
+                <div name="download-box"><button style="font-size:24px" type="button" class="btn btn-dark" id="ios"><i class="fa fa-apple" style="font-size:24px;color:white"></i> Download</button>
+                    <button style="font-size:24px" type="button" class="btn btn-outline-light" id="android"><i class="bi bi-google-play"style="font-size:24px;color:white"id="gplay"></i> Download</button></div>
+                </section>
+        </div>  
+        </div>
+        <div class="right">
+        <div  class="text-right" id="linkdown">
+            <a href="src">Contact</a>
+            <a href="src">Pricing</a>
+            <a href="src">Download</a>
+          </div>
+          <div class="bottom-right" id="Iphonepuppy">
+            <img class="rotate-img"name="swipepuppy"src="images/iphone6.png" />
+          </div>
+          </div>
+        </div>>
+      </body>
+    </div>
+  </div>
+  <footer></footer>
 </html>
