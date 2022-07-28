@@ -32,8 +32,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+.home {
   font-family: "Segoe UI", "Segoe UI", Tahoma, Verdana, Arial,
     sans-serif;
   line-height: 1.7em;
@@ -70,23 +69,39 @@ body {
   text-decoration: none;
   color: #fff solid;
 }
-#meetup{  
- margin:7rem auto auto -15rem;
+#meetup{
+  display:inline-flex;
+  float:left;  
+  justify-content: left;
+ /* margin:7rem auto auto -15rem; */
   height:10rem;
-  width:35rem;
-  float:left;
+  margin-right:50%;
+  /* width:35em; */
+  
 
 }
-/* #swipepuppy{
-    display:block;
-    justify-content:center;
-    max-height:12rem;   
-} */
+#puppy,#meetup{
+  display:block;
+  padding:2rem;
+  margin-bottom: 20rem;
 
+}
+.rotate-img{
+    float:right;
+    max-height:90rem;   
+
+}
+/* .download-box
+{
+  margin-top:-10rem;
+  float:left;
+
+} */
   </style>
   <body>
+    <section class="bkg" id="homepg">
     <header>
-      <nav id="navbar">
+      <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container">
           <h1 class="text-decoration logo" 
                  style="color: white"
@@ -100,35 +115,12 @@ body {
         </div>
       </nav>
 
-      <div id="meetup">
-       <div class="container">
+      <div id="meetup" class="row">
+       <div class="col-lg-6">
             <h1 class="text-left" id="meet" style="color:#fff;font-family:  'Lucida';font-size:5rem;">
                     Meet new and interesting dogs nearby.
                     </h1>
-        </div>
-       </div>
-
-
-        <div id="puppy">
-          <div class="container">
-             <div class="showcase-content">
-                   <img class="rotate-img"name="swipepuppy"src="images/iphone6.png" style="transform: rotate(25deg) " />
-                </div>
-            </div>
-         </div>
-     </header>
-  
-  
-  
-  
-     <div class="col-xs-4">
-          <div class="bottom-right" id="Iphonepuppy">
-           
-          </div>
-          </div>
-              <section>
-                <div name="download-box">
-                  <button
+                        <button
                     style="font-size: 24px"
                     type="button"
                     class="btn btn-dark"
@@ -153,18 +145,21 @@ body {
                     ></i>
                     Download
                   </button>
-                  </section>
-                </div>
-            </div>
+                  <div class="col-lg-6">
+                   <img class="rotate-img"name="swipepuppy"src="images/iphone6.png " />
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </body>
+       <section>
+     </header>
     <section id="comments">
-    <div class="comments">
+      <div class="comments">
       <div class ="box bg-primary">
         <i class="fa-solid fa-circle-check"></i>
        </div>
       </section>
-  </div>
+    </section>
+
+</body>
+    </div>
 </html>
