@@ -1,0 +1,76 @@
+#homepg {
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  line-height: 1.7em;
+  background-color: #ff4c68;
+  padding: 3rem 15rem 12rem;
+  text-align: left;
+}
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+#navbar h1 {
+  font-family: "Ubuntu", "Segoe UI", "Ultrasuede";
+  font-size: 4rem;
+  font-weight: bolder;
+}
+#navbar ul {
+  text-align: left;
+  margin: 0 0 0 30%;
+}
+#navbar ul li {
+  float: right;
+  list-style: none;
+  padding: 0 10px;
+}
+#swipepuppy {
+  width: 15rem;
+  transform: rotate(30deg);
+  right: 33%;
+  position: absolute;
+}
+#comments {
+  position: relative;
+  padding: 0 3rem;
+  background-color: white;
+}
+.feature-box {
+  text-align: center;
+  padding: 5rem;
+}
+.feature-box > p {
+  opacity: 0.8;
+}
+/* #meetup {
+  display: inline-flex;
+  float: left;
+  justify-content: left;
+  /* margin:7rem auto auto -15rem; */
+/* height: 10rem;
+margin-right: 50%; */
+/* width:35em; */
+/* }
+#puppy,
+#meetup {
+  display: block;
+  padding: 2rem;
+  margin-bottom: 20rem;
+} */
+/* .download-box
+{
+  margin-top:-10rem;
+  float:left;
+
+} */
+@media (max-width: 1028px) {
+  #homepg {
+    text-align: center;
+  }
+  #swipepuppy {
+    position: static;
+    transform: rotate(0);
+  }
+}

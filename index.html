@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /><link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Ubuntu">
     
-    
-    
+    <link rel="stylesheet" href="styles.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
           <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,83 +23,14 @@
   </head>
   <style>
 
-    {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.home {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Verdana, Arial,
-    sans-serif;
-  line-height: 1.7em;
-      background-color: #ff4c68;
-      padding: 5rem;
-    }
-#navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-size:2rem;
-  opacity:0.8;
-}
-#navbar h1 {
-  float: left;
-  justify-content: center;
-  font-family:'Ubuntu', 'Segoe UI','Ultrasuede';
-  font-size:4rem;
-}
-#navbar ul {
-  list-style: none;
-  float: right;
-}
-#navbar ul li {
-  float: left;
-}
-#navbar ul li a {
-  display: block;
-  padding: 20px;
-  text-align: center;
-}
-#navbar ul li a:hover,
-#navbar ul li a:active,
-#navbar ul li a:visited {
-  text-decoration: none;
-  color: #fff solid;
-}
-#meetup{
-  display:inline-flex;
-  float:left;  
-  justify-content: left;
- /* margin:7rem auto auto -15rem; */
-  height:10rem;
-  margin-right:50%;
-  /* width:35em; */
-  
-
-}
-#puppy,#meetup{
-  display:block;
-  padding:2rem;
-  margin-bottom: 20rem;
-
-}
-.rotate-img{
-    float:right;
-    max-height:90rem;   
-
-}
-/* .download-box
-{
-  margin-top:-10rem;
-  float:left;
-
-} */
+ 
   </style>
   <body>
     <section class="bkg" id="homepg">
-    <header>
+      <div class="container">
       <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container">
+        
           <h1 class="text-decoration logo" 
                  style="color: white"
                   id="tindog">
@@ -117,47 +45,44 @@
 
       <div id="meetup" class="row">
        <div class="col-lg-6">
-            <h1 class="text-left" id="meet" style="color:#fff;font-family:  'Lucida';font-size:5rem;">
+            <h1 class="text-left" id="meet" style="color:#fff;font-family:  'Lucida',sans-serif;font-size:3.5rem;">
                     Meet new and interesting dogs nearby.
                     </h1>
-                        <button
-                    style="font-size: 24px"
-                    type="button"
-                    class="btn btn-dark"
-                    id="ios"
-                  >
-                    <i
-                      class="fa fa-apple"
-                      style="font-size: 24px; color: white"
-                    ></i>
-                    Download
-                  </button>
-                  <button
-                    style="font-size: 24px;color:white;border:1px solid white;"
-                    type="button"
-                    class="btn btn-outline-dark"
-                    id="android"
-                  >
-                    <i
-                      class="bi bi-google-play"
-                      style="font-size: 24px; color: white"
-                      id="gplay"
-                    ></i>
-                    Download
-                  </button>
-                  <div class="col-lg-6">
-                   <img class="rotate-img"name="swipepuppy"src="images/iphone6.png " />
+                        <button style="font-size: 24px" type="button" class="btn btn-dark" id="ios" >
+                    <i class="fab fa-apple" style="font-size: 24px; color: white" ></i> Download </button>
+                  <button style="font-size: 24px;color:white;border:1px solid white;" type="button" class="btn btn-outline-dark" id="android">
+                    <i class="fab fa-google-play" style="font-size: 24px; color: white" id="gplay" ></i> Download</button>
+                  </div>
+                  
+                    <div class="col-lg-6"> 
+                   <img id="swipepuppy"src="images/iphone6.png " />
                   </div>
               </div>
           </div>
-       <section>
-     </header>
+        </section> 
     <section id="comments">
-      <div class="comments">
-      <div class ="box bg-primary">
-        <i class="fa-solid fa-circle-check"></i>
+      <div class="row">
+      <div class ="feature-box col-lg-4">
+        <i class="fas fa-check-circle fa-3x"style="color: #ff4c68"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
        </div>
+       <div class ="feature-box col-lg-4">
+        <i class="fas fa-bullseye fa-3x" style="color: #ff4c68"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greates dogs..</p>
+       </div>
+       <div class ="feature-box col-lg-4">
+        <i class="fas fa-heart fa-3x"style="color: #ff4c68"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's lide or your money back.</p>
+       </div>
+      
       </section>
+
+
+
+
     </section>
 
 </body>
