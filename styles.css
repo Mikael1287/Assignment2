@@ -10,7 +10,7 @@
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
   font-size: 2rem;
-  opacity: 0.8;
+  opacity: 0.65;
 }
 #navbar h1 {
   font-family: "Ubuntu", "Segoe UI", "Ultrasuede";
@@ -25,6 +25,9 @@
   float: right;
   list-style: none;
   padding: 0 10px;
+}
+#meet {
+  padding-bottom: 3rem;
 }
 #swipepuppy {
   width: 15rem;
@@ -64,28 +67,43 @@
 }
 #news > img {
   width: 20%;
+  padding-bottom: 3rem;
 }
-/* #meetup {
-  display: inline-flex;
-  float: left;
-  justify-content: left;
-  /* margin:7rem auto auto -15rem; */
-/* height: 10rem;
-margin-right: 50%; */
-/* width:35em; */
-/* }
-#puppy,
-#meetup {
-  display: block;
-  padding: 2rem;
-  margin-bottom: 20rem;
-} */
-/* .download-box
-{
-  margin-top:-10rem;
-  float:left;
+#plans {
+  padding: 6rem;
+  text-align: center;
+}
+#plans > h2 {
+  line-height: 1.4em;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+.card > p {
+  opacity: 0.5;
+}
+#price {
+  padding: 3rem;
+}
+.header {
+  background-color: #e0e6ed;
+}
+#download {
+  background-color: #ff4c68;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: white;
+}
+#download > .container > h2 {
+  padding: 5rem;
+}
+footer {
+  padding-top: 5rem;
+  text-align: center;
+}
+footer > p {
+  opacity: 0.6;
+  padding-top: 1rem;
+}
 
-} */
 @media (max-width: 1028px) {
   #homepg {
     text-align: center;
