@@ -1,9 +1,14 @@
+/* First box */
 #homepg {
   font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
   line-height: 1.7em;
   background-color: #ff4c68;
-  padding: 3rem 15rem 12rem;
+  padding: 3% 17% 10%;
   text-align: left;
+}
+
+#navbar {
+  padding-left: 12rem;
 }
 #navbar a {
   color: #fff;
@@ -16,18 +21,20 @@
   font-family: "Ubuntu", "Segoe UI", "Ultrasuede";
   font-size: 4rem;
   font-weight: bolder;
+  margin-left: -20%;
 }
 #navbar ul {
-  text-align: left;
   margin: 0 0 0 30%;
 }
 #navbar ul li {
   float: right;
   list-style: none;
-  padding: 0 10px;
+  padding: 0 2rem;
 }
+
 #meet {
-  padding-bottom: 3rem;
+  padding-top: 25%;
+  padding-bottom: 10%;
 }
 #swipepuppy {
   width: 15rem;
@@ -35,11 +42,13 @@
   right: 33%;
   position: absolute;
 }
+/* Comments box  */
 #comments {
   position: relative;
   padding: 0 3rem;
   background-color: white;
 }
+
 .feature-box {
   text-align: center;
   padding: 5rem;
@@ -47,6 +56,8 @@
 .feature-box > p {
   opacity: 0.55;
 }
+
+/* testimonials box */
 #plugs {
   color: #fff;
   background-color: #ef8172;
@@ -69,6 +80,7 @@
   width: 20%;
   padding-bottom: 3rem;
 }
+/* price plans box */
 #plans {
   padding: 6rem;
   text-align: center;
@@ -86,6 +98,7 @@
 .header {
   background-color: #e0e6ed;
 }
+/* downloads box */
 #download {
   background-color: #ff4c68;
   padding-bottom: 4rem;
@@ -95,6 +108,7 @@
 #download > .container > h2 {
   padding: 5rem;
 }
+/* Contact Info box */
 footer {
   padding-top: 5rem;
   text-align: center;
@@ -104,6 +118,7 @@ footer > p {
   padding-top: 1rem;
 }
 
+/* Arrangements for different resolution */
 @media (max-width: 1028px) {
   #homepg {
     text-align: center;
