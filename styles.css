@@ -21,15 +21,14 @@
   font-family: "Ubuntu", "Segoe UI", "Ultrasuede";
   font-size: 4rem;
   font-weight: bolder;
-  margin-left: -20%;
+  margin-left: -19%;
+  margin-right: 5%;
 }
-#navbar ul {
-  margin: 0 0 0 30%;
-}
+
 #navbar ul li {
-  float: right;
+  float: left;
   list-style: none;
-  padding: 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 
 #meet {
